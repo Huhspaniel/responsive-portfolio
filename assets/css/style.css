@@ -1,0 +1,180 @@
+body {
+    background: url("../images/oriental.png");
+    color:#777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size:  16px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+main {
+    margin: 91px 30px 85px;
+    width: 918px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+.main-content {
+    width: auto;
+    height: auto;
+    margin: 18px;
+	padding-top: 20px;
+	border-top: 3px solid #dddddd;
+}
+header {
+    background-color: #ffffff;
+    border-bottom: #cccccc solid 1px;
+    width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+.header-content {
+    position: relative;
+    width: 918px;
+    height: 100%;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+h1, h2, h3 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 18px;
+}
+h1 {
+    background-color: #4aaaa5;
+    color: white;
+    width: max-content;
+}
+h2 {
+    color: #4aaaa5;
+}
+p {
+    line-height: 1.5;
+    padding: 5px 0 5px 0;
+}
+
+nav {
+	z-index: 5;
+}
+nav a {
+    padding: 0 5px 0 5px;
+}
+a {
+    color: #777777;
+}
+.nav-borders {
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+
+.profile-pic {
+    color: #4aaaa5;
+    height: 200px;
+    float: left;
+    margin-right: 15px;
+}
+
+form {
+	width: 100%;
+	margin: 0;
+}
+input, textarea {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    font-size: 15px;
+}
+input.submit {
+    width: max-content;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 10px 20px 10px 20px;
+}
+
+.portfolio {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.portfolio-image {
+    width: 280px;
+    height: 280px;
+	position: relative;
+}
+.portfolio-image img, .portfolio-image h3 {
+    width: 90%;
+    margin: 5%;
+    border: 1px solid #4aaaa5;
+}
+.portfolio-image h3 {
+    background-color: #4aaaa5;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    position: absolute;
+    bottom: 20px;
+    padding: 15px 0 15px 0;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background-color: #666666;
+    border-top: #4aaaa5 solid 5px;
+}
+footer > p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    font-size: 10px;
+    color: #cccccc;
+}
+
+@media only screen and (max-width: 980px) {
+	body {
+		align-items: flex-start;
+	}
+	main {
+		width: 706px;
+		align-self: flex-start;
+	}
+	.header-content {
+		width: auto;
+		margin: 0 30px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	main {
+		width: calc(100% - 60px);
+		align-self: center;
+	}
+}
+@media only screen and (max-width: 640px) {
+	header {
+		position: static;
+	}
+	main {
+		margin: 30px 30px 85px;
+	}
+	.header-content {
+		margin: 0;
+		flex-direction: column;
+	}
+	h1 {
+		width: 100%;
+		text-align: center;
+	}
+	nav {
+		margin: 15px 0;
+	}
+}
