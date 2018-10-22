@@ -112,6 +112,9 @@ input.submit {
     margin: 5%;
     border: 1px solid #4aaaa5;
 }
+.portfolio-image img {
+    height: 90%;
+}
 .portfolio-image h3 {
     background-color: #4aaaa5;
     text-align: center;
